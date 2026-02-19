@@ -8,7 +8,7 @@
 # today = (today_month, today_day)
 
 import datetime as dt
-from os
+import os
 
 now = dt.datetime.now()
 today = (now.month, now.day)
