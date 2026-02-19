@@ -78,8 +78,8 @@ print(new_letter)
 import smtplib
 
 to_email = birthdays[today]["email"]
-my_email = "obsikobsik@gmail.com"
-password = "sbxeessbcdozczaz"
+MY_EMAIL = os.environ.get("MY_EMAIL")
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 with smtplib.SMTP('smtp.gmail.com') as connection:
     connection.starttls()
